@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meu primeiro site publicado: página simples, rápida e acessível.">
+  <title>Meu Site Publicado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">MeuSite</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <h1 id="titulo">Olá, eu sou <span class="destaque">Seu Nome</span> 👋</h1>
+        <p class="lead">Este é o meu primeiro site publicado. Simples, leve e pronto para aparecer no mundo! 🚀</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-outline" href="mailto:nivaldo.puhler@prof.sc.senac.br">Falar comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="bloco">
+      <div class="container">
+        <h2 id="sobre-titulo">Sobre mim</h2>
+        <p>Escreva aqui um parágrafo curto sobre quem você é, o que estuda ou no que trabalha. 
+        Diga também o que pretende publicar neste site (portfólio, anotações de aula, mini-blog etc.).</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3 id="card1-titulo">O que sei fazer</h3>
+            <ul>
+              <li>HTML semântico</li>
+              <li>CSS responsivo</li>
+              <li>Publicação em GitHub Pages/Netlify</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 id="card2-titulo">O que estou aprendendo</h3>
+            <ul>
+              <li>Acessibilidade na Web (a11y)</li>
+              <li>Boas práticas de SEO</li>
+              <li>Versionamento com Git</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 id="card3-titulo">Minhas metas</h3>
+            <ul>
+              <li>Lançar 1 projeto por mês</li>
+              <li>Melhorar meu Lighthouse em 10 pontos</li>
+              <li>Publicar um blog simples</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="bloco">
+      <div class="container">
+        <h2 id="projetos-titulo">Projetos</h2>
+        <p class="muted">Troque os exemplos abaixo pelos seus.</p>
+
+        <div class="grid">
+          <article class="tile">
+            <h3>Landing simples</h3>
+            <p>Uma página de apresentação com chamada para ação.</p>
+            <a class="link" href="#">Abrir</a>
+          </article>
+          <article class="tile">
+            <h3>Portfólio</h3>
+            <p>Lista de trabalhos com imagens e links.</p>
+            <a class="link" href="#">Abrir</a>
+          </article>
+          <article class="tile">
+            <h3>Mini-blog</h3>
+            <p>Posts curtos escritos em HTML puro.</p>
+            <a class="link" href="#">Abrir</a>
+          </article>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> MeuSite — publicado para fins de estudo.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
